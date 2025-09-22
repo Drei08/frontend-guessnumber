@@ -8,23 +8,6 @@
 }
   
 body{
-    background: #222;
-    color: #fff;
-    padding: 2rem 27rem;
-
+  font-family: "Inter", sans-serif;
+   
 }
-
-
-h1{
-    font-size: 3rem;
-}
-
-h2{
-    font-size: 1.25rem;
-}
-
-
-.toast__error{
-  background: rgb(248, 64, 64) !important;
-}
-
