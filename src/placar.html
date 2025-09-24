@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript module</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link 
+      rel="stylesheet" 
+      type="text/css" 
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Sora:wght@100..800&display=swap" 
+      rel="stylesheet">
+  </head>
+  <body class="bg-slate-100 min-h-screen w-screen flex flex-col gap-4 pt-4">
+    <ul
+        class="text-sm font-medium text-center text-gray-500 rounded-lg shadow sm:flex dark:divide-gray-700 dark:text-gray-400 max-w min-w-[300px] w-[50vw] m-auto"
+      >
+        <li class="w-full focus-within:z-10">
+          <a
+            href="/"
+            class="inline-block w-full p-4 text-gray-900 bg-gray-100 border-r border-gray-200 dark:border-gray-700 rounded-s-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-gray-700 dark:text-white"
+            aria-current="page"
+            >Jogo</a
+          >
+        </li>
+        <li class="w-full focus-within:z-10">
+          <a
+            href="/placar"
+            class="inline-block w-full p-4 bg-white border-r border-gray-200 dark:border-gray-700 hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
+            >Placar</a
+          >
+        </li>
+      </ul>
+
+      <header 
+        class="bg-white w-[50vw] m-auto rounded-xl drop-shadow-md p-6 flex justify-center items-center gap-8 ">
+        <img 
+          class="w-[40px] h-[25px]" src="place.png" alt="git picture" />
+        <h1 class="text-2xl font-bold text-slate-600">
+          Andrei Lucas
+        </h1>
+        <h3 class="text-[15px] font-medium text-slate-500">
+          Pontuação: 11
+        </h3>
+        <h3 class="text-[15px] font-medium text-slate-500">
+          Tentativas: 25
+        </h3>
+      </header>
+
+      <main class="bg-white w-[50vw] m-auto min-h-[500px] rounded-xl drop-shadow-md p-12 flex flex-col gap-10">
+        <h1 class="text-3xl font-bold text-slate-700 text-center">
+          Adivinhe o número
+        </h1>
+        <h2 class="text-2xl font-light text-slate-400 text-center">
+          Placar de acertos
+        </h2>
+
+        <div class="h-[250px] overflow-y-auto flex flex-col gap-4">
+          <div class="flex justify-center items-center gap-6">
+            <h1 class="text-3xl font-semibold text-slate-500">
+                01
+            </h1>
+            <div>
+              <h2 class="text-xl font-bold">
+                Lucas Alves
+              </h2>
+              <h3 class="font-base text-slate-500">
+                11 vitórias / 25 tentativas
+              </h3>
+            </div>
+            <img 
+              class="w-[30px] h-[20px]" 
+              src="place.png" 
+              alt="git picture" />
+          </div>
+          <div class="flex justify-center items-center gap-6">
+            <h1 class="text-3xl font-semibold text-slate-500">
+                02
+            </h1>
+            <div>
+              <h2 class="text-xl font-bold">
+                Stefani Cristini
+              </h2>
+              <h3 class="font-base text-slate-500">
+                11 vitórias / 25 tentativas
+              </h3>
+            </div>
+            <img 
+              class="w-[30px] h-[20px]" 
+              src="place.png" 
+              alt="git picture" />
+          </div>
+          <div class="flex justify-center items-center gap-6">
+            <h1 class="text-3xl font-semibold text-slate-500">
+                03
+            </h1>
+            <div>
+              <h2 class="text-xl font-bold">
+                Cleusa Aparecida
+              </h2>
+              <h3 class="font-base text-slate-500">
+                11 vitórias / 25 tentativas
+              </h3>
+            </div>
+            <img 
+              class="w-[30px] h-[20px]" 
+              src="place.png" 
+              alt="git picture" />
+          </div>
+          <div class="flex justify-center items-center gap-6">
+            <h1 class="text-3xl font-semibold text-slate-500">
+                04
+            </h1>
+            <div>
+              <h2 class="text-xl font-bold">
+                Marcos Felipe
+              </h2>
+              <h3 class="font-base text-slate-500">
+                11 vitórias / 25 tentativas
+              </h3>
+            </div>
+            <img 
+              class="w-[30px] h-[20px]" 
+              src="place.png" 
+              alt="git picture" />
+          </div>
+          <div class="flex justify-center items-center gap-6">
+            <h1 class="text-3xl font-semibold text-slate-500">
+                05
+            </h1>
+            <div>
+              <h2 class="text-xl font-bold">
+                Antonio Alves
+              </h2>
+              <h3 class="font-base text-slate-500">
+                11 vitórias / 25 tentativas
+              </h3>
+            </div>
+            <img 
+              class="w-[30px] h-[20px]" 
+              src="place.png" 
+              alt="git picture" />
+          </div>
+          <div class="flex justify-center items-center gap-6">
+            <h1 class="text-3xl font-semibold text-slate-500">
+                06
+            </h1>
+            <div>
+              <h2 class="text-xl font-bold">
+                Gabriele Zuliane
+              </h2>
+              <h3 class="font-base text-slate-500">
+                11 vitórias / 25 tentativas
+              </h3>
+            </div>
+            <img 
+              class="w-[30px] h-[20px]" 
+              src="place.png" 
+              alt="git picture" />
+          </div>
+          <div class="flex justify-center items-center gap-6">
+            <h1 class="text-3xl font-semibold text-slate-500">
+                07
+            </h1>
+            <div>
+              <h2 class="text-xl font-bold">
+                Cidele Perreira
+              </h2>
+              <h3 class="font-base text-slate-500">
+                11 vitórias / 25 tentativas
+              </h3>
+            </div>
+            <img 
+              class="w-[30px] h-[20px]" 
+              src="place.png" 
+              alt="git picture" />
+          </div>
+          <div class="flex justify-center items-center gap-6">
+            <h1 class="text-3xl font-semibold text-slate-500">
+                08
+            </h1>
+            <div>
+              <h2 class="text-xl font-bold">
+                Miguel Alves
+              </h2>
+              <h3 class="font-base text-slate-500">
+                11 vitórias / 25 tentativas
+              </h3>
+            </div>
+            <img 
+              class="w-[30px] h-[20px]" 
+              src="place.png" 
+              alt="git picture" />
+          </div>
+          <div class="flex justify-center items-center gap-6">
+            <h1 class="text-3xl font-semibold text-slate-500">
+                09
+            </h1>
+            <div>
+              <h2 class="text-xl font-bold">
+                Guilerme Bariani
+              </h2>
+              <h3 class="font-base text-slate-500">
+                11 vitórias / 25 tentativas
+              </h3>
+            </div>
+            <img 
+              class="w-[30px] h-[20px]" 
+              src="place.png" 
+              alt="git picture" />
+          </div>
+          <div class="flex justify-center items-center gap-6">
+            <h1 class="text-3xl font-semibold text-slate-500">
+                10
+            </h1>
+            <div>
+              <h2 class="text-xl font-bold">
+                Weseley Stofalletti
+              </h2>
+              <h3 class="font-base text-slate-500">
+                11 vitórias / 25 tentativas
+              </h3>
+            </div>
+            <img 
+              class="w-[30px] h-[20px]" 
+              src="place.png" 
+              alt="git picture" />
+          </div>
+        </div>
+
+        <a
+          href="/" 
+          class="mx-auto bg-blue-500 text-white rounded-xl flex justify-center items-center p-4 w-1/2">
+            Voltar ao jogo
+        </a>
+      
+    </main>
+  </body>
+  <script 
+    type="text/javascript" 
+    src="https://cdn.jsdelivr.net/npm/toastify-js">
+  </script>
+  <script type="module" src="./js/main.js"></script>
+</html>
