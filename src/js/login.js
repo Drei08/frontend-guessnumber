@@ -1,3 +1,13 @@
+import Identicon from "identicon.js";
+
+function generateRandomHash() {
+  const array = new Uint8Array(16);
+  window.crypto.getRandomValues(array);
+  return Array.from(array, (byte) => byte.toString(16).padStart(2, "0")).join(
+    ""
+  );
+}
+
 const criarConta = async (event) => {
 
   event.preventDefault();
@@ -6,12 +16,22 @@ const criarConta = async (event) => {
   const username = formData.get("username");
   const password = formData.get("password");
 
+  const options = {
+    background: [0, 0, 0, 255],
+    margin: 0.2,
+    size: 50,
+  };
+
+  const hash = generateRandomHash();
+  const data = new Identicon(hash, options).toString();
+
   localStorage.removeItem("user");
 
   const bodyString = JSON.stringify({
       username,
       password,
-    })
+      picture: data,
+    });
 
   const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/user/authsign`, {
     method: "POST",
@@ -24,7 +44,7 @@ const criarConta = async (event) => {
   const responseMessage = await res.json();
   console.log(responseMessage);
 
-  if(res?.status === 200) {
+  if(res?.status === 200 || res?.status === 201) {
     Toastify({
       text: responseMessage?.message ?? "Login com Sucesso!",
       className: "info",
@@ -33,7 +53,7 @@ const criarConta = async (event) => {
     setTimeout(() => {
       localStorage.setItem("user", bodyString);
       window.location.href = "/";
-    }, 1000);
+    }, 10000);
 
   } 
   else {
