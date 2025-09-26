@@ -50,10 +50,23 @@ const criarConta = async (event) => {
       className: "info",
     }).showToast();
 
+    if(res?.status === 200){
+      localStorage.setItem("user", 
+        JSON.stringify({
+          username,
+          password,
+          picture: responseMessage.user.picture,
+        })
+      );   
+    }
+    else{
+      localStorage.setItem("user", bodyString);
+    }
+
     setTimeout(() => {
       localStorage.setItem("user", bodyString);
       window.location.href = "/";
-    }, 10000);
+    }, 1000);
 
   } 
   else {
